@@ -1,0 +1,25 @@
+@import './components/utils.scss';
+
+.appBase{
+  height: 100vh;
+  width: 100vw;
+  background-color: $RAAD-1-hex;
+  background-image:url('./background.png');
+  background-size: cover;
+
+  font-family: $mainFont;
+
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr, 10fr;
+  grid-template-areas:
+    "header header"
+    "editor viewer";
+
+  justify-content: space-around;
+}
+
+#headerBox{
+  @include headerBox;
+  grid-area: header;
+}

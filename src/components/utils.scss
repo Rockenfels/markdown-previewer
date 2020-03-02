@@ -1,0 +1,74 @@
+/* Color Theme Swatches in Hex */
+$RAAD-1-hex: #2A2F40;
+$RAAD-2-hex: #1BBF72;
+$RAAD-3-hex: #17A663;
+$RAAD-4-hex: #1F8C59;
+$RAAD-5-hex: #A69D8D;
+
+/* Color Theme Swatches in RGBA */
+$RAAD-1-rgba: rgba(42,47,63, 1);
+$RAAD-2-rgba: rgba(26,191,114, 1);
+$RAAD-3-rgba: rgba(23,165,99, 1);
+$RAAD-4-rgba: rgba(30,140,89, 1);
+$RAAD-5-rgba: rgba(165,157,140, 1);
+
+/* Color Theme Swatches in HSLA */
+$RAAD-1-hsla: hsla(225, 20, 20, 1);
+$RAAD-2-hsla: hsla(151, 75, 42, 1);
+$RAAD-3-hsla: hsla(151, 75, 37, 1);
+$RAAD-4-hsla: hsla(151, 63, 33, 1);
+$RAAD-5-hsla: hsla(39, 12, 60, 1);
+
+$mainFont:'Oxanium';
+
+@mixin boxBase {
+  width: 49vw;
+  height: 92vh;
+  padding-bottom: 10px;
+
+  background-color: transparentize($RAAD-4-hex, .2);
+  border: 1px solid $RAAD-1-hex;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+@mixin headerBox{
+  font-size: 2em;
+  padding: 3px 10px;
+
+  border: .5px solid $RAAD-1-hex;
+  border-radius: 5px;
+
+  background-color: $RAAD-3-hex;
+  color: #FFFF;
+
+  justify-content: space-around;
+  align-self: center;
+  text-align: center;
+}
+
+@mixin contentDisplay{
+  height: 91%;
+  width: 95%;
+
+  background-color: lighten($RAAD-5-hex, 30%);
+  border: .5px solid $RAAD-1-hex;
+  border-radius: 5px;
+  padding: 4px 8px;
+
+  text-indent: 5px;
+  overflow: auto;
+  scroll-behavior: smooth;
+
+  align-self: center;
+}
+
+@mixin borders {
+  border: 2px solid $RAAD-4-hex;
+  padding: 2px;
+  margin: 0;
+  border-collapse: collapse;
+}

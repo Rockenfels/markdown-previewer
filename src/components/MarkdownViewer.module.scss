@@ -1,0 +1,35 @@
+@import './utils.scss';
+
+.boxWindow {
+  @include boxBase;
+  grid-area: viewer;
+}
+
+.descriptor{
+  @include headerBox;
+  font-size: 1.5em;
+}
+
+.previewer{
+  @include contentDisplay;
+  margin: 0;
+  padding-top: 2px;
+
+  blockquote{
+    border-left: 5px solid $RAAD-2-hex;
+  }
+
+  td, th, tr{
+    @include borders;
+  }
+
+  * {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+
+  img{
+    max-width: 46.55vw;
+  }
+}
