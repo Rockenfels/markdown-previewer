@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import styles from './MarkdownEditor.module.scss'
 import { sendMark } from './markdownActions.js'
 import { bindActionCreators } from 'redux'
-import marked from 'marked'
 
 class Editor extends React.Component {
   constructor(props){
