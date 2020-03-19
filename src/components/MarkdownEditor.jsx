@@ -37,7 +37,7 @@ const mapDispatchToProps = dispatch => bindActionCreators(
   {
     sendMark
   },
-  dispatch,
+  dispatch
 );
 
 export default connect(mapState, mapDispatchToProps)(Editor);

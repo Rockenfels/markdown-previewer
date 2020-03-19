@@ -1,4 +1,4 @@
-import { WRITE} from './components/markdownActions.js';
+import { WRITE } from './components/markdownActions.js';
 import { defaultMarkdown } from './components/defaultMarkdown.js';
 
 const rootReducer = (defaultState = {payload: defaultMarkdown}, action) => {
